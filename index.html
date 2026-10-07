@@ -1,18 +1,239 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0;url=https://fantik99.com/akzg">
-  <title>fanatik99</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FANATIK99</title>
+    <meta name="description" content="FANATIK99 - Website resmi.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background:
+                radial-gradient(circle at 15% 20%, rgba(59, 130, 246, 0.20), transparent 30%),
+                radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.18), transparent 30%),
+                #080d18;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            padding: 24px 6%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            letter-spacing: 3px;
+        }
+
+        /* HERO */
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+        }
+
+        .card {
+            width: 100%;
+            max-width: 650px;
+            padding: 60px 45px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.10);
+            border-radius: 28px;
+
+            box-shadow:
+                0 25px 70px rgba(0, 0, 0, 0.35);
+
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .welcome {
+            display: inline-block;
+            padding: 8px 15px;
+            margin-bottom: 22px;
+
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.08);
+            color: #cbd5e1;
+
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: clamp(42px, 8vw, 78px);
+            line-height: 1;
+            letter-spacing: -2px;
+            margin-bottom: 24px;
+        }
+
+        .description {
+            max-width: 520px;
+            margin: 0 auto 35px;
+
+            color: #aeb9ca;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* BUTTON */
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            min-width: 230px;
+            min-height: 56px;
+            padding: 15px 28px;
+
+            border-radius: 14px;
+
+            background: #ffffff;
+            color: #080d18;
+
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 700;
+
+            transition:
+                transform 0.2s ease,
+                box-shadow 0.2s ease,
+                opacity 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 35px rgba(255, 255, 255, 0.15);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 25px 20px;
+            text-align: center;
+
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 20px;
+            }
+
+            .logo {
+                font-size: 21px;
+                letter-spacing: 2px;
+            }
+
+            .hero {
+                padding: 30px 16px;
+            }
+
+            .card {
+                padding: 45px 24px;
+                border-radius: 22px;
+            }
+
+            .welcome {
+                font-size: 12px;
+                margin-bottom: 18px;
+            }
+
+            h1 {
+                font-size: 46px;
+                letter-spacing: -1px;
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 1.65;
+                margin-bottom: 30px;
+            }
+
+            .button {
+                width: 100%;
+                min-height: 54px;
+            }
+
+            footer {
+                padding: 20px 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <script>
-    window.location.replace("https://fantik99.com/akzg");
-  </script>
-  <noscript>
-    <p>Mengalihkan ke halaman tujuan...</p>
-    <p><a href="https://fantik99.com/akzg">Lanjutkan</a></p>
-  </noscript>
+
+    <div class="page">
+
+        <header>
+            <div class="logo">FANATIK99</div>
+        </header>
+
+        <main class="hero">
+
+            <div class="card">
+
+                <div class="welcome">
+                    WEBSITE RESMI
+                </div>
+
+                <h1>FANATIK99</h1>
+
+                <p class="description">
+                    Selamat datang di FANATIK99.
+                    Klik tombol di bawah untuk melanjutkan ke website.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://fantik99.com/akzg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Kunjungi Website
+                </a>
+
+            </div>
+
+        </main>
+
+        <footer>
+            © 2026 FANATIK99. All rights reserved.
+        </footer>
+
+    </div>
+
 </body>
 </html>
+```
