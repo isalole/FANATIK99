@@ -1,17 +1,20 @@
-# FANATIK99 — SEO technical cleanup
+# FANATIK99 — Vercel SEO technical cleanup
 
-## Included
-- `index.html`: responsive, accessible landing page with clear disclosure that the outbound link opens a different domain.
-- `robots.txt`: allows crawling and points to the sitemap.
-- `sitemap.xml`: lists the canonical homepage.
-- `google029609a9c3f95b6c.html`: original Google Search Console verification file; keep it unchanged.
+This package is configured for the free Vercel hostname `https://fanatik99.vercel.app/`.
+
+## Files
+- `index.html`: responsive landing page with a transparent external-link disclosure.
+- `robots.txt`: permits crawling and points to the sitemap.
+- `sitemap.xml`: lists the Vercel homepage.
+- `google029609a9c3f95b6c.html`: existing Google Search Console verification file; keep it at the site root.
 
 ## Deploy
-Upload all four files to the web root for `https://fanatik99.com/`. Keep the verification HTML file at the exact root path. Then check these URLs in a browser:
-- `https://fanatik99.com/robots.txt`
-- `https://fanatik99.com/sitemap.xml`
-- `https://fanatik99.com/google029609a9c3f95b6c.html`
+Upload the files in this folder to the root of the Git repository connected to Vercel, then commit and wait for deployment. Verify:
+- `https://fanatik99.vercel.app/`
+- `https://fanatik99.vercel.app/robots.txt`
+- `https://fanatik99.vercel.app/sitemap.xml`
+- `https://fanatik99.vercel.app/google029609a9c3f95b6c.html`
 
-Submit `https://fanatik99.com/sitemap.xml` in Google Search Console, inspect `https://fanatik99.com/`, run a live test, and request indexing after deployment.
+In Google Search Console, add or select the URL-prefix property `https://fanatik99.vercel.app/`, submit `sitemap.xml`, and inspect the homepage.
 
-SEO note: no code can guarantee first place or indexing. Google determines ranking. This page intentionally does not disguise the external destination or make unverified claims about ownership or services. The outbound URL remains `https://fantik99.com/akzg` as provided; note that its domain spelling differs from `fanatik99.com`.
+No changes can guarantee indexing or first-place rankings. Keep the destination of external links transparent and ensure the content complies with applicable law and platform policies.
