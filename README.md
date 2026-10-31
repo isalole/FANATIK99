@@ -1,24 +1,32 @@
-# Fanatik99 — Portal Informasi Gaming
+# Fanatik99 — Paket Perbaikan SEO
 
-Static website package ready for Vercel.
+Website statis responsif untuk domain utama `https://fanatik99.vercel.app/`.
 
-## Files
-- `index.html` — responsive landing page, SEO metadata, canonical URL, Open Graph metadata, WebSite structured data, FAQ, and transparent external-link disclosure.
-- `robots.txt` — allows crawling and points to the sitemap.
-- `sitemap.xml` — sitemap for the canonical homepage.
-- `favicon.svg` — simple site icon.
+## Isi paket
+- `index.html` — halaman informasi dengan panduan pemeriksaan situs, keamanan akun, privasi, risiko layanan digital, FAQ, metadata SEO, canonical, Open Graph, dan data terstruktur WebSite.
+- `robots.txt` — mengizinkan crawling dan menunjuk sitemap.
+- `sitemap.xml` — sitemap URL utama dengan tanggal pembaruan.
+- `favicon.svg` — ikon situs.
+- `google029609a9c3f95b6c.html` — file verifikasi Search Console; pertahankan file ini.
 
-## Deploy to Vercel
-1. Upload these files to the root of a Git repository, or place them in a folder.
-2. Import the repository in Vercel. For a static HTML site, no build command is needed; set the output directory to `.` if requested.
-3. Deploy, then verify the live URLs:
+## Deploy ke Vercel
+1. Ekstrak ZIP.
+2. Unggah isi folder `FANATIK99-main` ke repositori GitHub yang terhubung ke proyek Vercel, atau unggah proyek sesuai alur deployment yang kamu gunakan.
+3. Untuk situs HTML statis, tidak perlu build command; gunakan folder root sebagai output jika diminta.
+4. Deploy, lalu periksa:
    - `https://fanatik99.vercel.app/`
    - `https://fanatik99.vercel.app/robots.txt`
    - `https://fanatik99.vercel.app/sitemap.xml`
 
-## Important before publishing
-- Confirm you control `fanatik99.vercel.app`. If using a custom domain, update every canonical, sitemap, Open Graph, JSON-LD, and robots URL to the final domain.
-- The external button currently opens `https://fantik99.com/akzg`, in a new tab. Change that URL in `index.html` if needed.
-- Review the page's disclosure and FAQ to ensure they match the destination website and your actual relationship with it.
-- This is an informational landing page. Do not describe unbuilt features as available. Add genuinely useful, original articles before expecting strong organic search performance.
-- Search indexing is not guaranteed. Submit the sitemap in Google Search Console, test the live URL, and request indexing after deployment.
+## Setelah deploy
+1. Pastikan halaman utama mengembalikan HTTP 200 dan tidak mengalami redirect berulang.
+2. Pastikan HTML live menampilkan canonical `https://fanatik99.vercel.app/`.
+3. Pastikan tidak ada `noindex` dari HTML, header HTTP, atau konfigurasi hosting.
+4. Di Google Search Console, jalankan **Test Live URL**. Jika dapat diakses dan pengindeksan diizinkan, minta pengindeksan ulang.
+5. Kirim `https://fanatik99.vercel.app/sitemap.xml` melalui menu Sitemaps.
+
+## Catatan penting
+- Domain utama dan canonical sengaja dipertahankan pada `fanatik99.vercel.app`; jangan mencampurnya dengan `fanatik99.my.id` atau `fantik99.com` tanpa rencana migrasi yang benar.
+- Tombol eksternal tetap menuju `https://fantik99.com/akzg`. Halaman menyatakan secara jelas bahwa tautan itu membuka domain berbeda dan tidak mengklaim telah memverifikasi identitas, izin, legalitas, atau keamanan tujuan.
+- Pastikan seluruh keterangan dan pengungkapan di halaman sesuai dengan hubungan sebenarnya antara kamu dan situs tujuan.
+- Sitemap membantu Google menemukan URL, tetapi tidak menjamin pengindeksan atau ranking. Google dapat memilih untuk tidak mengindeks halaman.

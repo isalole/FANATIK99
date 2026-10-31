@@ -5,20 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101827">
   <meta name="robots" content="index,follow,max-image-preview:large">
-  <meta name="googlebot" content="index,follow">
-  <title>Fanatik99 — Informasi, Artikel, dan Panduan Gaming</title>
-  <meta name="description" content="Fanatik99 adalah portal informasi gaming untuk membaca artikel, mengenal tren permainan digital, dan menemukan panduan seputar dunia game.">
+  <meta name="googlebot" content="index,follow,max-image-preview:large">
+  <title>Fanatik99: Informasi, Keamanan, dan Panduan Pengguna</title>
+  <meta name="description" content="Baca informasi Fanatik99, panduan memeriksa situs dan tautan, keamanan akun, privasi, serta risiko saat menggunakan layanan permainan digital.">
   <link rel="canonical" href="https://fanatik99.vercel.app/">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
   <meta property="og:site_name" content="Fanatik99">
-  <meta property="og:title" content="Fanatik99 — Informasi, Artikel, dan Panduan Gaming">
-  <meta property="og:description" content="Baca artikel dan panduan untuk mengenal dunia game digital bersama Fanatik99.">
+  <meta property="og:title" content="Fanatik99: Informasi, Keamanan, dan Panduan Pengguna">
+  <meta property="og:description" content="Informasi yang transparan tentang halaman Fanatik99, keamanan akun, privasi, dan risiko layanan digital.">
   <meta property="og:url" content="https://fanatik99.vercel.app/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Fanatik99 — Informasi dan Artikel Gaming">
-  <meta name="twitter:description" content="Artikel, wawasan, dan panduan seputar dunia game digital.">
+  <meta name="twitter:title" content="Fanatik99: Informasi dan Panduan Pengguna">
+  <meta name="twitter:description" content="Panduan memeriksa situs, menjaga akun, dan memahami risiko layanan digital.">
   <meta name="color-scheme" content="dark">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,221 +30,95 @@
     "name": "Fanatik99",
     "url": "https://fanatik99.vercel.app/",
     "inLanguage": "id-ID",
-    "description": "Portal informasi gaming yang menyajikan artikel dan panduan seputar dunia game digital."
+    "description": "Halaman informasi Fanatik99 yang membahas pemeriksaan situs, keamanan akun, privasi, dan risiko layanan digital."
   }
   </script>
   <style>
     :root{--bg:#0b1220;--panel:#111c2e;--panel2:#16243a;--text:#f4f7fb;--muted:#aab7ca;--line:#263750;--accent:#7cdbb3;--accent2:#9cf0cf;--max:1120px}
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{margin:0;background:radial-gradient(ellipse at 80% -10%,#203753 0,transparent 42%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.65}
-    a{color:inherit}
-    .wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}
-    .skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:#07131a;padding:10px 14px;border-radius:8px;z-index:10}
-    .skip:focus{left:8px}
-    header{border-bottom:1px solid #ffffff12;background:#0b1220d9;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}
-    .nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;font-size:1.15rem;letter-spacing:-.04em}
-    .logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4ba9c8);display:grid;place-items:center;color:#08151b;font-weight:900}
-    nav{display:flex;align-items:center;gap:24px}
-    nav a{color:var(--muted);text-decoration:none;font-size:.92rem}
-    nav a:hover,nav a:focus-visible{color:var(--accent2)}
-    .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:12px 18px;text-decoration:none;font-weight:700;background:var(--accent);color:#09151a;transition:transform .18s,background .18s}
-    .button:hover{transform:translateY(-2px);background:var(--accent2)}
-    .button.secondary{background:transparent;border-color:#ffffff2b;color:var(--text)}
-    .hero{padding:84px 0 64px}
-    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}
-    .eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--accent2);font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.13em}
-    .dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}
-    h1{font-size:clamp(2.6rem,6vw,4.7rem);letter-spacing:-.065em;line-height:1.04;margin:18px 0}
-    h1 span{color:var(--accent)}
-    .lead{font-size:1.12rem;color:var(--muted);max-width:650px}
-    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-    .note{font-size:.8rem;color:var(--muted);margin-top:16px}
-    .hero-card{background:linear-gradient(145deg,#17283e,#101a2a);border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:0 28px 80px #0003}
-    .mini-label{color:var(--muted);font-size:.8rem}
-    .feature-visual{min-height:245px;border-radius:18px;background:linear-gradient(135deg,#1b3a4c,#1b2941 60%,#293153);display:flex;flex-direction:column;justify-content:space-between;padding:22px;margin:16px 0}
-    .feature-visual .symbol{font-size:3.6rem;line-height:1}
-    .feature-visual h2{font-size:1.45rem;line-height:1.2;margin:0;letter-spacing:-.04em}
-    .chips{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{font-size:.75rem;color:#d5e2ef;border:1px solid #ffffff24;padding:6px 10px;border-radius:999px}
-    section{padding:54px 0}
-    .section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}
-    .section-head h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.05em;line-height:1.15;margin:8px 0}
-    .section-head p{color:var(--muted);max-width:540px;margin:0}
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{border:1px solid var(--line);background:linear-gradient(160deg,#142137,#101a2a);border-radius:18px;padding:22px;min-height:220px}
-    .card-icon{width:44px;height:44px;border-radius:13px;background:#7cdbb31b;color:var(--accent);display:grid;place-items:center;font-size:1.35rem}
-    .card h3{font-size:1.12rem;margin:18px 0 8px}
-    .card p{color:var(--muted);font-size:.93rem;margin:0}
-    .about{display:grid;grid-template-columns:.85fr 1.15fr;gap:36px;align-items:start}
-    .about-panel{border:1px solid var(--line);border-radius:20px;padding:25px;background:#111c2e}
-    .about-panel h2{margin-top:0;letter-spacing:-.04em;line-height:1.2}
-    .about-panel p{color:var(--muted)}
-    .list{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:13px}
-    .list li{display:flex;gap:10px;color:#dce5ef}
-    .check{color:var(--accent);font-weight:900}
-    .disclosure{border:1px solid #665c39;background:#292719;border-radius:14px;padding:16px 18px;color:#e9dfbb;font-size:.9rem}
-    .faq{display:grid;gap:10px}
-    details{border:1px solid var(--line);background:#111c2e;border-radius:14px;padding:17px 19px}
-    summary{font-weight:700;cursor:pointer}
-    details p{color:var(--muted);margin-bottom:0}
-    .cta{padding:34px;border-radius:22px;border:1px solid #2e5a56;background:linear-gradient(120deg,#142e35,#142237);display:flex;justify-content:space-between;align-items:center;gap:24px}
-    .cta h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 7px;letter-spacing:-.04em}
-    .cta p{margin:0;color:var(--muted)}
-    footer{border-top:1px solid #ffffff14;margin-top:40px;padding:30px 0 38px;color:var(--muted);font-size:.86rem}
-    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
-    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
-    .footer-links a{color:var(--muted);text-decoration:none}
-    .footer-links a:hover{color:var(--accent)}
-    :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-    @media(max-width:800px){.hero{padding-top:58px}.hero-grid,.about{grid-template-columns:1fr}.hero-grid{gap:30px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:14px}}
-    @media(max-width:560px){.wrap{width:min(100% - 28px,var(--max))}.nav{min-height:66px}nav a:not(.button){display:none}nav .button{padding:10px 12px;font-size:.83rem}.hero{padding:48px 0 34px}h1{font-size:clamp(2.5rem,13vw,3.6rem)}.lead{font-size:1rem}.cards{grid-template-columns:1fr}.card{min-height:auto}.section-head{display:block}.section-head p{margin-top:10px}.cta{padding:24px;align-items:flex-start;flex-direction:column}.hero-card{padding:17px}.feature-visual{min-height:210px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 80% -10%,#203753 0,transparent 42%),var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.7}a{color:inherit}.wrap{width:min(var(--max),calc(100% - 40px));margin-inline:auto}.skip{position:absolute;left:-9999px;top:8px;background:var(--accent);color:#07131a;padding:10px 14px;border-radius:8px;z-index:10}.skip:focus{left:8px}
+    header{border-bottom:1px solid #ffffff12;background:#0b1220eF;backdrop-filter:blur(12px);position:sticky;top:0;z-index:5}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;font-size:1.15rem;letter-spacing:-.04em}.logo{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#4ba9c8);display:grid;place-items:center;color:#08151b;font-weight:900}nav{display:flex;align-items:center;gap:22px}nav a{color:var(--muted);text-decoration:none;font-size:.9rem}nav a:hover,nav a:focus-visible{color:var(--accent2)}
+    .button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:12px 18px;text-decoration:none;font-weight:700;background:var(--accent);color:#09151a;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px);background:var(--accent2)}.button.secondary{background:transparent;border-color:#ffffff2b;color:var(--text)}
+    .hero{padding:78px 0 55px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:var(--accent2);font-size:.76rem;font-weight:800;text-transform:uppercase;letter-spacing:.13em}.dot{width:7px;height:7px;border-radius:50%;background:var(--accent)}h1{font-size:clamp(2.55rem,6vw,4.5rem);letter-spacing:-.065em;line-height:1.05;margin:18px 0}h1 span{color:var(--accent)}.lead{font-size:1.1rem;color:var(--muted);max-width:670px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.note{font-size:.8rem;color:var(--muted);margin-top:15px}.hero-card{background:linear-gradient(145deg,#17283e,#101a2a);border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:0 28px 80px #0003}.mini-label{color:var(--muted);font-size:.8rem}.feature-visual{min-height:245px;border-radius:18px;background:linear-gradient(135deg,#1b3a4c,#1b2941 60%,#293153);display:flex;flex-direction:column;justify-content:space-between;padding:22px;margin:16px 0}.feature-visual .symbol{font-size:3.6rem;line-height:1}.feature-visual h2{font-size:1.45rem;line-height:1.2;margin:0;letter-spacing:-.04em}.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{font-size:.75rem;color:#d5e2ef;border:1px solid #ffffff24;padding:6px 10px;border-radius:999px}
+    section{padding:48px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:24px}.section-head h2{font-size:clamp(1.7rem,4vw,2.45rem);letter-spacing:-.05em;line-height:1.18;margin:8px 0}.section-head p{color:var(--muted);max-width:570px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{border:1px solid var(--line);background:linear-gradient(160deg,#142137,#101a2a);border-radius:18px;padding:22px}.card-icon{width:44px;height:44px;border-radius:13px;background:#7cdbb31b;color:var(--accent);display:grid;place-items:center;font-size:1.35rem}.card h3{font-size:1.08rem;margin:15px 0 8px}.card p{color:var(--muted);font-size:.92rem;margin:0}.prose{max-width:850px}.prose h3{font-size:1.18rem;margin:27px 0 8px}.prose p,.prose li{color:var(--muted)}.prose ul{padding-left:22px}.prose li{margin:7px 0}.panel{border:1px solid var(--line);border-radius:20px;padding:25px;background:#111c2e}.panel h2{margin-top:0;letter-spacing:-.04em;line-height:1.2}.panel p{color:var(--muted)}.notice{border:1px solid #665c39;background:#292719;border-radius:14px;padding:16px 18px;color:#e9dfbb;font-size:.9rem}.faq{display:grid;gap:10px}details{border:1px solid var(--line);background:#111c2e;border-radius:14px;padding:17px 19px}summary{font-weight:700;cursor:pointer}details p{color:var(--muted);margin-bottom:0}.cta{padding:32px;border-radius:22px;border:1px solid #2e5a56;background:linear-gradient(120deg,#142e35,#142237);display:flex;justify-content:space-between;align-items:center;gap:24px}.cta h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 7px;letter-spacing:-.04em}.cta p{margin:0;color:var(--muted)}footer{border-top:1px solid #ffffff14;margin-top:35px;padding:30px 0 38px;color:var(--muted);font-size:.86rem}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-links{display:flex;gap:18px;flex-wrap:wrap}.footer-links a{color:var(--muted);text-decoration:none}.footer-links a:hover{color:var(--accent)}:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    @media(max-width:850px){.hero{padding-top:55px}.hero-grid{grid-template-columns:1fr;gap:30px}.cards{grid-template-columns:repeat(2,1fr)}nav{gap:14px}.section-head{display:block}.section-head p{margin-top:10px}}@media(max-width:600px){.wrap{width:min(100% - 28px,var(--max))}.nav{min-height:66px}nav a:not(.button){display:none}nav .button{padding:10px 12px;font-size:.8rem}.hero{padding:45px 0 30px}h1{font-size:clamp(2.45rem,13vw,3.5rem)}.lead{font-size:1rem}.cards{grid-template-columns:1fr}.cta{padding:23px;align-items:flex-start;flex-direction:column}.hero-card{padding:17px}.feature-visual{min-height:210px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
   </style>
 </head>
 <body>
   <a class="skip" href="#konten">Lewati ke konten utama</a>
-  <header>
-    <div class="wrap nav">
-      <a class="brand" href="/" aria-label="Fanatik99, beranda"><span class="logo" aria-hidden="true">F</span><span>FANATIK99</span></a>
-      <nav aria-label="Navigasi utama">
-        <a href="#artikel">Topik</a>
-        <a href="#tentang">Tentang</a>
-        <a href="#faq">FAQ</a>
-        <a class="button" href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Buka Situs Eksternal ↗</a>
-      </nav>
-    </div>
-  </header>
+  <header><div class="wrap nav">
+    <a class="brand" href="/" aria-label="Fanatik99, beranda"><span class="logo" aria-hidden="true">F</span><span>FANATIK99</span></a>
+    <nav aria-label="Navigasi utama"><a href="#panduan">Panduan</a><a href="#keamanan">Keamanan</a><a href="#risiko">Risiko</a><a href="#faq">FAQ</a><a class="button" href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Buka domain eksternal ↗</a></nav>
+  </div></header>
 
   <main id="konten">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div>
-          <div class="eyebrow"><span class="dot"></span> Portal Informasi Gaming</div>
-          <h1>Jelajahi dunia <span>gaming</span> dengan lebih mudah.</h1>
-          <p class="lead">Fanatik99 adalah portal informasi gaming yang dirancang sebagai titik awal untuk mengenal topik, tren, dan wawasan seputar dunia permainan digital.</p>
-          <div class="hero-actions">
-            <a class="button" href="#artikel">Jelajahi topik ↓</a>
-            <a class="button secondary" href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Kunjungi situs eksternal ↗</a>
-          </div>
-          <p class="note">Tautan eksternal membuka situs lain di tab baru. Periksa alamat dan ketentuan situs tujuan sebelum menggunakannya.</p>
-        </div>
-        <aside class="hero-card" aria-label="Gambaran topik gaming">
-          <span class="mini-label">Ruang eksplorasi gaming</span>
-          <div class="feature-visual">
-            <div class="symbol" aria-hidden="true">⌘</div>
-            <div>
-              <h2>Informasi yang membantu kamu memahami game.</h2>
-              <p class="mini-label">Topik • Wawasan • Panduan</p>
-            </div>
-          </div>
-          <div class="chips"><span class="chip">Dunia game</span><span class="chip">Tips gaming</span><span class="chip">Budaya digital</span></div>
-        </aside>
+    <section class="hero"><div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Pusat informasi Fanatik99</div>
+        <h1>Kenali situs dan layanan digital dengan <span>lebih cermat.</span></h1>
+        <p class="lead">Halaman Fanatik99 ini menyediakan informasi dasar untuk membantu pengunjung memeriksa alamat situs, memahami keamanan akun, menjaga privasi, dan mempertimbangkan risiko sebelum menggunakan layanan digital.</p>
+        <div class="hero-actions"><a class="button" href="#panduan">Baca panduan</a><a class="button secondary" href="#identitas">Informasi domain</a></div>
+        <p class="note">Diperbarui: 31 Oktober 2026. Informasi di halaman ini bersifat umum dan bukan jaminan atas layanan pihak lain.</p>
       </div>
-    </section>
+      <aside class="hero-card" aria-label="Ringkasan panduan"><span class="mini-label">Sebelum membuka layanan apa pun</span><div class="feature-visual"><div class="symbol" aria-hidden="true">⌕</div><div><h2>Periksa alamat. Pahami ketentuan. Lindungi akun.</h2><p class="mini-label">Identitas • Keamanan • Risiko</p></div></div><div class="chips"><span class="chip">Cek domain</span><span class="chip">Jaga privasi</span><span class="chip">Pahami risiko</span></div></aside>
+    </div></section>
 
-    <section id="artikel">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Kenali topiknya</div><h2>Hal yang bisa kamu pelajari</h2></div>
-          <p>Gunakan kategori berikut sebagai panduan untuk mengeksplorasi dunia gaming. Artikel baru sebaiknya ditambahkan saat tersedia agar pembaca mendapatkan informasi yang nyata dan bermanfaat.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🎮</div>
-            <h3>Genre dan jenis permainan</h3>
-            <p>Mengenal karakteristik game aksi, strategi, simulasi, petualangan, kasual, dan genre lain untuk membantu memahami pilihan permainan.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🧭</div>
-            <h3>Tips dan panduan gaming</h3>
-            <p>Pelajari pendekatan umum untuk memahami mekanik permainan, mengatur kontrol, dan membangun kebiasaan bermain yang seimbang.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🌐</div>
-            <h3>Tren dunia game</h3>
-            <p>Ikuti pembahasan tentang perkembangan game digital, komunitas pemain, pembaruan industri, dan budaya gaming.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🛡️</div>
-            <h3>Keamanan akun</h3>
-            <p>Kenali langkah dasar menjaga akun, membuat kata sandi yang kuat, mengaktifkan verifikasi tambahan, dan menghindari tautan mencurigakan.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🖥️</div>
-            <h3>Perangkat dan performa</h3>
-            <p>Pahami faktor umum yang memengaruhi pengalaman bermain, seperti pengaturan grafis, koneksi internet, dan kemampuan perangkat.</p>
-          </article>
-          <article class="card">
-            <div class="card-icon" aria-hidden="true">🤝</div>
-            <h3>Komunitas dan etika</h3>
-            <p>Bangun pengalaman bermain yang positif melalui komunikasi yang sopan, privasi yang terjaga, dan sikap sportif kepada pemain lain.</p>
-          </article>
-        </div>
+    <section id="identitas"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Informasi halaman</div><h2>Mengenal Fanatik99 dan alamat yang ditautkan</h2></div><p>Nama yang mirip tidak selalu berarti alamat situs yang sama. Selalu periksa domain yang tampil pada bilah alamat browser sebelum memasukkan data.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon" aria-hidden="true">🌐</div><h3>Halaman informasi</h3><p>Halaman ini diterbitkan pada alamat fanatik99.vercel.app. Alamat tersebut adalah domain yang sedang kamu kunjungi, bukan alamat tujuan tautan eksternal.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">↗</div><h3>Domain eksternal</h3><p>Tautan keluar pada halaman ini menuju fantik99.com/akzg. Ejaan domainnya berbeda. Periksa kembali alamat dan kebijakan situs tujuan sebelum melanjutkan.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">ℹ</div><h3>Batas informasi</h3><p>Halaman ini tidak memverifikasi identitas operator, izin, status hukum, metode pembayaran, atau keamanan layanan pada domain eksternal. Periksa semua hal tersebut secara mandiri.</p></article>
       </div>
-    </section>
+    </div></section>
 
-    <section id="tentang">
-      <div class="wrap about">
-        <div>
-          <div class="eyebrow">Tentang Fanatik99</div>
-          <h2 style="font-size:clamp(2rem,4.5vw,3.1rem);letter-spacing:-.055em;line-height:1.1;margin:12px 0">Informasi gaming, disampaikan dengan jelas.</h2>
-          <p style="color:var(--muted)">Tujuan halaman ini adalah memberi pengunjung gambaran yang jelas tentang topik gaming dan menjelaskan ke mana tautan di halaman akan membawa mereka.</p>
-        </div>
-        <div class="about-panel">
-          <h2>Prinsip kami</h2>
-          <p>Informasi yang baik perlu mudah dipahami, relevan dengan topik, dan tidak membuat klaim yang belum dapat dibuktikan.</p>
-          <ul class="list">
-            <li><span class="check">✓</span><span><strong>Jelas:</strong> pengunjung mengetahui fungsi tautan sebelum membukanya.</span></li>
-            <li><span class="check">✓</span><span><strong>Relevan:</strong> pembahasan berfokus pada permainan digital dan pengalaman gaming.</span></li>
-            <li><span class="check">✓</span><span><strong>Transparan:</strong> situs tujuan eksternal bukan bagian dari halaman Fanatik99 ini.</span></li>
-          </ul>
-        </div>
-      </div>
-    </section>
+    <section id="panduan"><div class="wrap prose">
+      <div class="eyebrow">Panduan pemeriksaan</div><h2>Enam langkah sebelum menggunakan sebuah situs</h2>
+      <p>Jangan menilai sebuah layanan hanya dari nama, tampilan, iklan, atau tombol yang mengarah kepadanya. Lakukan pemeriksaan berikut setiap kali membuka situs yang belum kamu kenal.</p>
+      <h3>1. Cocokkan ejaan domain</h3><p>Baca nama domain dari kiri ke kanan dan perhatikan salah eja, tambahan tanda hubung, subdomain yang tidak biasa, atau akhiran domain yang berbeda. Simpan alamat resmi yang sudah kamu verifikasi agar tidak bergantung pada tautan dari pesan yang tidak dikenal.</p>
+      <h3>2. Periksa koneksi dan identitas pengelola</h3><p>HTTPS membantu mengenkripsi koneksi, tetapi bukan bukti bahwa pengelola situs dapat dipercaya atau bahwa layanannya memiliki izin. Cari nama badan usaha atau pengelola, alamat kontak yang dapat diverifikasi, kebijakan privasi, serta ketentuan layanan.</p>
+      <h3>3. Baca ketentuan sebelum mendaftar</h3><p>Pastikan kamu memahami syarat usia, aturan penggunaan, biaya, pembatalan, penanganan keluhan, dan cara menutup akun. Hindari layanan yang menyembunyikan syarat penting atau mendesak pengguna mengambil keputusan.</p>
+      <h3>4. Jangan serahkan data rahasia</h3><p>Jangan pernah membagikan kata sandi, PIN, kode OTP, kode pemulihan, atau data kartu melalui chat maupun formulir yang tidak jelas. Pengelola layanan yang sah tidak seharusnya meminta kode autentikasi rahasia untuk dibacakan.</p>
+      <h3>5. Waspadai janji hasil pasti</h3><p>Klaim keuntungan, kemenangan, hadiah, atau pengembalian dana yang dijamin perlu dicurigai. Jangan mengambil keputusan finansial berdasarkan testimoni yang tidak dapat diverifikasi atau tekanan untuk bertindak cepat.</p>
+      <h3>6. Hentikan jika ada tanda bahaya</h3><p>Tutup halaman jika menemukan unduhan otomatis, permintaan akses perangkat yang tidak relevan, permintaan transfer ke rekening pribadi tanpa penjelasan, atau ancaman bahwa akun akan hilang jika kamu tidak segera membayar.</p>
+    </div></section>
 
-    <section aria-label="Informasi tautan eksternal">
-      <div class="wrap">
-        <div class="disclosure"><strong>Informasi tautan:</strong> Tombol “Buka Situs Eksternal” menuju domain <code>fantik99.com</code>, yang berbeda dari <code>fanatik99.vercel.app</code>. Fanatik99 tidak mengklaim memiliki atau mengoperasikan situs tujuan tersebut. Tinjau isi, kebijakan, dan ketentuan situs tujuan sebelum melanjutkan.</div>
+    <section id="keamanan"><div class="wrap">
+      <div class="section-head"><div><div class="eyebrow">Keamanan akun</div><h2>Kebiasaan sederhana untuk melindungi akun</h2></div><p>Keamanan akun bergantung pada kebiasaan pengguna dan perlindungan yang disediakan layanan. Tidak ada satu langkah yang menjamin keamanan sepenuhnya.</p></div>
+      <div class="cards">
+        <article class="card"><div class="card-icon" aria-hidden="true">🔐</div><h3>Gunakan kata sandi unik</h3><p>Buat kata sandi panjang yang berbeda untuk setiap layanan. Pengelola kata sandi dapat membantu membuat dan menyimpannya dengan aman.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">📲</div><h3>Aktifkan autentikasi tambahan</h3><p>Jika tersedia, aktifkan autentikasi dua faktor melalui aplikasi autentikator atau metode aman lain. Simpan kode pemulihan di tempat terpisah.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🧾</div><h3>Periksa aktivitas akun</h3><p>Tinjau riwayat login, perangkat yang terhubung, dan notifikasi keamanan. Keluar dari sesi yang tidak dikenal dan ubah kata sandi jika ada aktivitas mencurigakan.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">📧</div><h3>Waspadai pesan palsu</h3><p>Jangan membuka tautan atau lampiran dari pengirim yang tidak dikenal. Buka situs melalui alamat yang sudah diverifikasi, bukan melalui pesan mendesak.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🛡️</div><h3>Batasi data pribadi</h3><p>Berikan hanya data yang benar-benar diperlukan. Hindari mengunggah dokumen identitas ke situs yang pengelolanya dan tujuan pemrosesan datanya tidak jelas.</p></article>
+        <article class="card"><div class="card-icon" aria-hidden="true">🚪</div><h3>Ketahui cara menutup akun</h3><p>Sebelum mendaftar, cari tahu prosedur penghapusan akun, pengelolaan data, dan kanal bantuan. Simpan bukti komunikasi penting.</p></article>
       </div>
-    </section>
+    </div></section>
 
-    <section id="faq">
-      <div class="wrap">
-        <div class="section-head">
-          <div><div class="eyebrow">Pertanyaan umum</div><h2>FAQ Fanatik99</h2></div>
-          <p>Jawaban singkat tentang halaman ini dan penggunaan tautan eksternal.</p>
-        </div>
-        <div class="faq">
-          <details><summary>Apa itu Fanatik99?</summary><p>Fanatik99 adalah halaman portal informasi gaming yang membahas topik umum seputar permainan digital, panduan, perangkat, keamanan akun, dan komunitas game.</p></details>
-          <details><summary>Apakah game bisa dimainkan langsung di halaman ini?</summary><p>Tidak ada permainan yang dapat dimainkan langsung pada halaman ini. Halaman ini menyajikan informasi dan menyediakan tautan ke situs eksternal.</p></details>
-          <details><summary>Apakah tautan utama membuka situs Fanatik99 yang sama?</summary><p>Tidak. Tautan tersebut membuka domain eksternal fantik99.com, bukan domain fanatik99.vercel.app. Periksa alamat di browser sebelum memasukkan informasi apa pun.</p></details>
-          <details><summary>Apakah saya perlu membuat akun untuk membaca halaman ini?</summary><p>Halaman informasi ini tidak menyediakan fitur pendaftaran atau login. Persyaratan pada situs eksternal, jika ada, ditentukan oleh pengelola situs tersebut.</p></details>
-          <details><summary>Bagaimana cara menjaga keamanan saat mengunjungi situs game?</summary><p>Gunakan kata sandi unik, aktifkan autentikasi dua faktor jika tersedia, jangan membagikan kode verifikasi, dan periksa alamat situs sebelum masuk atau melakukan transaksi.</p></details>
-          <details><summary>Apakah Fanatik99 menjamin keamanan atau hasil dari situs eksternal?</summary><p>Tidak. Halaman ini tidak menjamin keamanan, layanan, hasil, atau kebijakan situs eksternal. Periksa informasi resmi dan ketentuan dari pengelola situs yang kamu kunjungi.</p></details>
-        </div>
-      </div>
-    </section>
+    <section id="risiko"><div class="wrap prose">
+      <div class="eyebrow">Penggunaan yang bertanggung jawab</div><h2>Pahami risiko layanan permainan dan aktivitas berbasis uang</h2>
+      <p>Permainan digital dapat menjadi hiburan, tetapi layanan yang melibatkan uang, taruhan, pembelian item, atau transaksi memiliki risiko tambahan. Hasil permainan tidak dapat dijadikan sumber pendapatan yang pasti dan tidak ada strategi yang menjamin kemenangan.</p>
+      <h3>Jangan gunakan uang untuk kebutuhan pokok</h3><p>Jangan menggunakan uang sewa, makan, pendidikan, cicilan, dana darurat, atau uang pinjaman untuk aktivitas berisiko. Jika kamu memilih berpartisipasi dalam aktivitas yang legal di wilayahmu, tetapkan batas waktu dan biaya yang sanggup hilang sepenuhnya.</p>
+      <h3>Kenali tanda kehilangan kendali</h3><p>Berhenti dan cari bantuan jika aktivitas mulai mengganggu pekerjaan, sekolah, hubungan, tidur, atau kondisi keuangan; jika kamu terus mengejar kerugian; atau jika kamu merasa harus menyembunyikan aktivitas tersebut dari orang terdekat.</p>
+      <h3>Perhatikan aturan di wilayahmu</h3><p>Ketentuan hukum berbeda menurut negara dan wilayah serta dapat berubah. Pastikan aktivitas dan layanan yang digunakan sesuai hukum setempat. Jangan menganggap sebuah situs legal hanya karena dapat diakses atau memiliki tampilan profesional.</p>
+      <div class="notice"><strong>Catatan penting:</strong> Halaman ini bukan ajakan untuk berjudi atau melakukan transaksi. Jika suatu layanan melibatkan taruhan atau uang, pertimbangkan risikonya dengan serius dan jangan pernah menganggap hasilnya terjamin.</div>
+    </div></section>
 
-    <section>
-      <div class="wrap">
-        <div class="cta">
-          <div><h2>Siap melanjutkan?</h2><p>Jika ingin membuka tautan eksternal, pastikan kamu memahami domain tujuan terlebih dahulu.</p></div>
-          <a class="button" href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Lanjut ke situs eksternal ↗</a>
-        </div>
+    <section id="faq"><div class="wrap"><div class="section-head"><div><div class="eyebrow">Pertanyaan umum</div><h2>FAQ Fanatik99</h2></div><p>Jawaban tentang halaman ini, tautan eksternal, dan langkah pemeriksaan dasar.</p></div>
+      <div class="faq">
+        <details><summary>Apa itu halaman Fanatik99 ini?</summary><p>Ini adalah halaman informasi yang membahas cara memeriksa alamat situs, keamanan akun, privasi, dan risiko layanan digital. Halaman ini tidak menyediakan fitur login, permainan, atau transaksi.</p></details>
+        <details><summary>Apakah fanatik99.vercel.app dan fantik99.com alamat yang sama?</summary><p>Tidak. Keduanya merupakan nama domain yang berbeda. Tautan eksternal di halaman ini membuka fantik99.com/akzg. Periksa bilah alamat browser setiap kali berpindah situs.</p></details>
+        <details><summary>Apakah tautan eksternal sudah diverifikasi aman atau resmi?</summary><p>Halaman ini tidak menyatakan bahwa situs tujuan telah diverifikasi aman, resmi, berizin, atau sesuai hukum. Pengunjung perlu memeriksa identitas pengelola, ketentuan, kebijakan privasi, dan aturan setempat secara mandiri.</p></details>
+        <details><summary>Apakah HTTPS berarti sebuah situs pasti aman?</summary><p>Tidak. HTTPS mengenkripsi koneksi antara browser dan situs, tetapi tidak membuktikan kejujuran pengelola, legalitas layanan, atau keamanan seluruh aktivitas di dalamnya.</p></details>
+        <details><summary>Bagaimana jika saya menerima permintaan OTP atau PIN?</summary><p>Jangan berikan kode tersebut kepada siapa pun. Hentikan komunikasi, buka layanan melalui alamat yang telah diverifikasi, dan hubungi kanal bantuan resmi yang tercantum pada situs tersebut.</p></details>
+        <details><summary>Apakah halaman ini menjamin hasil atau keuntungan?</summary><p>Tidak. Halaman ini tidak menjanjikan kemenangan, keuntungan, hadiah, atau pengembalian dana. Berhati-hatilah terhadap pihak yang membuat janji hasil pasti atau meminta pembayaran untuk membuka hadiah.</p></details>
+        <details><summary>Bagaimana cara melaporkan tautan atau aktivitas mencurigakan?</summary><p>Jangan lanjutkan transaksi atau membagikan data. Simpan bukti yang relevan, laporkan kepada penyedia layanan atau platform tempat tautan ditemukan, dan hubungi bank atau penyedia pembayaran jika data keuangan sudah terlanjur dibagikan.</p></details>
       </div>
-    </section>
+    </div></section>
+
+    <section><div class="wrap"><div class="cta"><div><h2>Periksa alamat sebelum melanjutkan</h2><p>Tautan berikut membuka domain berbeda. Pastikan kamu memahami tujuan dan ketentuan situs tersebut.</p></div><a class="button" href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Buka fantik99.com ↗</a></div></div></section>
   </main>
 
-  <footer>
-    <div class="wrap footer-inner">
-      <div><strong style="color:var(--text)">FANATIK99</strong><br><span>Portal informasi gaming.</span><br><span>© <span id="year">2026</span> Fanatik99.</span></div>
-      <div class="footer-links"><a href="#tentang">Tentang</a><a href="#artikel">Topik</a><a href="#faq">FAQ</a><a href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Situs eksternal ↗</a></div>
-    </div>
-  </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <footer><div class="wrap footer-inner"><div><strong style="color:var(--text)">FANATIK99</strong><br><span>Informasi, keamanan, dan panduan pengguna.</span><br><span>© <span id="year">2026</span> Fanatik99.</span></div><div class="footer-links"><a href="#identitas">Informasi</a><a href="#panduan">Panduan</a><a href="#keamanan">Keamanan</a><a href="#faq">FAQ</a><a href="https://fantik99.com/akzg" target="_blank" rel="noopener noreferrer">Domain eksternal ↗</a></div></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
